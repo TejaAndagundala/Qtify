@@ -1,0 +1,29 @@
+.musicPlayer {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.musicImage {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  /* justify-content: center; */
+  padding-right: 470px;
+}
+
+.duration {
+  width: 676px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}

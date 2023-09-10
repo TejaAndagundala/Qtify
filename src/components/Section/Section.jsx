@@ -4,6 +4,7 @@ import Card from "../Card/Card.jsx";
 import { useState } from "react";
 import styles from "./Section.module.css";
 import Carousel from "../Carousel/Carousel.jsx";
+import Filter from "../FilterTabs/FilterTabs.jsx";
 
 const Section = ({ title, data, type }) => {
   const [carouselToggle, setCarouselToggle] = useState(true);
@@ -20,6 +21,7 @@ const Section = ({ title, data, type }) => {
           {carouselToggle ? "show All" : "collapse All"}
         </h4>
       </div>
+      {type === "song" ? <Filter /> : null}
       {data?.length === 0 ? (
         <CircularProgress />
       ) : (

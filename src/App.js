@@ -5,7 +5,8 @@ import Navbar from "./components/Navbar/Navbar.jsx";
 // import Card from "./components/Card/Card.jsx";
 import Section from "./components/Section/Section.jsx";
 import styles from "./App.module.css";
-
+import Faqs from "./components/Faqs/Faqs.jsx";
+import MusicPlayer from "./components/MusicPlayer/MusicPlayer.jsx";
 function App() {
   const [topAlbumData, setTopAlbumData] = useState([]);
   const [newAlbumData, setNewAlbumData] = useState([]);
@@ -58,12 +59,17 @@ function App() {
       </div>
       {/* <Card data={topAlbumData[0]} type="album" /> */}
 
-      {/* {topAlbumData.map((item, index) => 
+      {/* {topAlbumData.map((item, index) =>
         <Card key={index} data={item} type="album" />
       ))} */}
       {/* {topAlbumData.map((item) => (
         <Card data={item} type="album" />
       ))} */}
+      {/* <Faqs />
+
+      <div className={styles.MusicPlayer}>
+        <MusicPlayer />
+      </div> */}
     </>
   );
 }
