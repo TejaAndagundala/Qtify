@@ -65,11 +65,10 @@ function App() {
       {/* {topAlbumData.map((item) => (
         <Card data={item} type="album" />
       ))} */}
-      {/* <Faqs />
-
+      <Faqs />
       <div className={styles.MusicPlayer}>
         <MusicPlayer />
-      </div> */}
+      </div>
     </>
   );
 }
